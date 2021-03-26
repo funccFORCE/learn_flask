@@ -9,5 +9,7 @@ def index():
 def info():
     return render_template('info.html', name=request.args.get("name"))
 
+
+
 if __name__ == "__main__":
      app.run(debug=True, port=8000) 
