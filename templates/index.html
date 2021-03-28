@@ -57,8 +57,9 @@
            <th scope="col">Date & Time</th>
         </tr>
       </thead>
-      <tbody>
+      
         {% for funccforce in allFunccforce %}
+        <tbody>
         <tr>
           <th scope="row">{{loop.index}}</th>
           <td>{{funccforce.name}}</td>
@@ -66,10 +67,8 @@
           <td>{{funccforce.dept}}</td>
           <td>{{funccforce.date_created}}</td>
         </tr>
-        {% endfor %}
-        
-    
-      </tbody>
+      {% endfor %}
+    </tbody>
     </table>
   </div>
   
